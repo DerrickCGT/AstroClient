@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using System.ServiceModel;
+using System.Globalization;
+using System.Threading;
 
 namespace AstroClient
 {
@@ -180,6 +182,41 @@ namespace AstroClient
 
         #endregion
 
+        #region Globalization
+        private void ChangeLanguage(string language)
+        {
+            switch (language)
+            {
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB");
+                    break;
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+                    break;
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+                    break;
+            }
+            Controls.Clear();
+            InitializeComponent();
+        }
 
+
+        #endregion
+
+        private void toolStripMenuItemEnglishUK_Click(object sender, EventArgs e)
+        {
+            { ChangeLanguage("English"); }
+        }
+
+        private void toolStripMenuItemFrench_Click(object sender, EventArgs e)
+        {
+            { ChangeLanguage("French"); }
+        }
+
+        private void toolStripMenuItemGerman_Click(object sender, EventArgs e)
+        {
+            { ChangeLanguage("German"); }
+        }
     }
 }

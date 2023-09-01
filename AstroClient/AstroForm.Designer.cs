@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItemLanguage = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemEnglishUK = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemFrench = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemGerman = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemTheme = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,30 +87,33 @@
             // toolStripMenuItemLanguage
             // 
             this.toolStripMenuItemLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
+            this.toolStripMenuItemEnglishUK,
             this.toolStripMenuItemFrench,
             this.toolStripMenuItemGerman});
             this.toolStripMenuItemLanguage.Name = "toolStripMenuItemLanguage";
-            this.toolStripMenuItemLanguage.Size = new System.Drawing.Size(88, 26);
+            this.toolStripMenuItemLanguage.Size = new System.Drawing.Size(88, 24);
             this.toolStripMenuItemLanguage.Text = "Language";
             // 
-            // toolStripMenuItem2
+            // toolStripMenuItemEnglishUK
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(162, 26);
-            this.toolStripMenuItem2.Text = "English UK";
+            this.toolStripMenuItemEnglishUK.Name = "toolStripMenuItemEnglishUK";
+            this.toolStripMenuItemEnglishUK.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItemEnglishUK.Text = "English UK";
+            this.toolStripMenuItemEnglishUK.Click += new System.EventHandler(this.toolStripMenuItemEnglishUK_Click);
             // 
             // toolStripMenuItemFrench
             // 
             this.toolStripMenuItemFrench.Name = "toolStripMenuItemFrench";
-            this.toolStripMenuItemFrench.Size = new System.Drawing.Size(162, 26);
+            this.toolStripMenuItemFrench.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItemFrench.Text = "Français";
+            this.toolStripMenuItemFrench.Click += new System.EventHandler(this.toolStripMenuItemFrench_Click);
             // 
             // toolStripMenuItemGerman
             // 
             this.toolStripMenuItemGerman.Name = "toolStripMenuItemGerman";
-            this.toolStripMenuItemGerman.Size = new System.Drawing.Size(162, 26);
+            this.toolStripMenuItemGerman.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItemGerman.Text = "Deutsch";
+            this.toolStripMenuItemGerman.Click += new System.EventHandler(this.toolStripMenuItemGerman_Click);
             // 
             // toolStripMenuItemTheme
             // 
@@ -118,7 +121,7 @@
             this.toolStripMenuItemBackgroundMode,
             this.toolStripMenuItemColour});
             this.toolStripMenuItemTheme.Name = "toolStripMenuItemTheme";
-            this.toolStripMenuItemTheme.Size = new System.Drawing.Size(68, 26);
+            this.toolStripMenuItemTheme.Size = new System.Drawing.Size(68, 24);
             this.toolStripMenuItemTheme.Text = "Theme";
             // 
             // toolStripMenuItemBackgroundMode
@@ -143,9 +146,9 @@
             this.groupBoxStarVelocity.Controls.Add(this.labelRestWavelength);
             this.groupBoxStarVelocity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxStarVelocity.Location = new System.Drawing.Point(16, 33);
-            this.groupBoxStarVelocity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStarVelocity.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxStarVelocity.Name = "groupBoxStarVelocity";
-            this.groupBoxStarVelocity.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStarVelocity.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxStarVelocity.Size = new System.Drawing.Size(180, 129);
             this.groupBoxStarVelocity.TabIndex = 1;
             this.groupBoxStarVelocity.TabStop = false;
@@ -220,9 +223,9 @@
             this.groupBoxStarDistance.Controls.Add(this.textBoxParallaxAngle);
             this.groupBoxStarDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxStarDistance.Location = new System.Drawing.Point(16, 170);
-            this.groupBoxStarDistance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStarDistance.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxStarDistance.Name = "groupBoxStarDistance";
-            this.groupBoxStarDistance.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStarDistance.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxStarDistance.Size = new System.Drawing.Size(180, 110);
             this.groupBoxStarDistance.TabIndex = 2;
             this.groupBoxStarDistance.TabStop = false;
@@ -265,9 +268,9 @@
             this.groupBoxCelcius.Controls.Add(this.textBoxCelcius);
             this.groupBoxCelcius.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCelcius.Location = new System.Drawing.Point(16, 287);
-            this.groupBoxCelcius.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxCelcius.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxCelcius.Name = "groupBoxCelcius";
-            this.groupBoxCelcius.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxCelcius.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxCelcius.Size = new System.Drawing.Size(180, 129);
             this.groupBoxCelcius.TabIndex = 3;
             this.groupBoxCelcius.TabStop = false;
@@ -312,9 +315,9 @@
             this.groupBoxEventHorizon.Controls.Add(this.textBoxMassOfStar);
             this.groupBoxEventHorizon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxEventHorizon.Location = new System.Drawing.Point(16, 423);
-            this.groupBoxEventHorizon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxEventHorizon.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxEventHorizon.Name = "groupBoxEventHorizon";
-            this.groupBoxEventHorizon.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxEventHorizon.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxEventHorizon.Size = new System.Drawing.Size(180, 129);
             this.groupBoxEventHorizon.TabIndex = 10;
             this.groupBoxEventHorizon.TabStop = false;
@@ -380,7 +383,7 @@
             this.columnHeaderEventHorizon});
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(213, 33);
-            this.listView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView.Margin = new System.Windows.Forms.Padding(4);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(764, 565);
             this.listView.TabIndex = 11;
@@ -415,7 +418,7 @@
             // buttonCalculation
             // 
             this.buttonCalculation.Location = new System.Drawing.Point(13, 560);
-            this.buttonCalculation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCalculation.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalculation.Name = "buttonCalculation";
             this.buttonCalculation.Size = new System.Drawing.Size(183, 38);
             this.buttonCalculation.TabIndex = 12;
@@ -436,7 +439,7 @@
             this.Controls.Add(this.groupBoxStarVelocity);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AstroForm";
             this.Text = "Astronomical Processing App";
             this.menuStrip1.ResumeLayout(false);
@@ -458,7 +461,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemLanguage;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEnglishUK;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemFrench;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemGerman;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemTheme;
