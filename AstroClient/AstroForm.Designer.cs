@@ -73,12 +73,14 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemLanguage,
             this.toolStripMenuItemTheme});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(992, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,25 +91,25 @@
             this.toolStripMenuItemFrench,
             this.toolStripMenuItemGerman});
             this.toolStripMenuItemLanguage.Name = "toolStripMenuItemLanguage";
-            this.toolStripMenuItemLanguage.Size = new System.Drawing.Size(71, 20);
+            this.toolStripMenuItemLanguage.Size = new System.Drawing.Size(88, 26);
             this.toolStripMenuItemLanguage.Text = "Language";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(162, 26);
             this.toolStripMenuItem2.Text = "English UK";
             // 
             // toolStripMenuItemFrench
             // 
             this.toolStripMenuItemFrench.Name = "toolStripMenuItemFrench";
-            this.toolStripMenuItemFrench.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItemFrench.Size = new System.Drawing.Size(162, 26);
             this.toolStripMenuItemFrench.Text = "Français";
             // 
             // toolStripMenuItemGerman
             // 
             this.toolStripMenuItemGerman.Name = "toolStripMenuItemGerman";
-            this.toolStripMenuItemGerman.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItemGerman.Size = new System.Drawing.Size(162, 26);
             this.toolStripMenuItemGerman.Text = "Deutsch";
             // 
             // toolStripMenuItemTheme
@@ -116,19 +118,19 @@
             this.toolStripMenuItemBackgroundMode,
             this.toolStripMenuItemColour});
             this.toolStripMenuItemTheme.Name = "toolStripMenuItemTheme";
-            this.toolStripMenuItemTheme.Size = new System.Drawing.Size(55, 20);
+            this.toolStripMenuItemTheme.Size = new System.Drawing.Size(68, 26);
             this.toolStripMenuItemTheme.Text = "Theme";
             // 
             // toolStripMenuItemBackgroundMode
             // 
             this.toolStripMenuItemBackgroundMode.Name = "toolStripMenuItemBackgroundMode";
-            this.toolStripMenuItemBackgroundMode.Size = new System.Drawing.Size(169, 22);
+            this.toolStripMenuItemBackgroundMode.Size = new System.Drawing.Size(211, 26);
             this.toolStripMenuItemBackgroundMode.Text = "Light/Dark Theme";
             // 
             // toolStripMenuItemColour
             // 
             this.toolStripMenuItemColour.Name = "toolStripMenuItemColour";
-            this.toolStripMenuItemColour.Size = new System.Drawing.Size(169, 22);
+            this.toolStripMenuItemColour.Size = new System.Drawing.Size(211, 26);
             this.toolStripMenuItemColour.Text = "Select Colour";
             // 
             // groupBoxStarVelocity
@@ -140,9 +142,11 @@
             this.groupBoxStarVelocity.Controls.Add(this.textBoxRestWavelength);
             this.groupBoxStarVelocity.Controls.Add(this.labelRestWavelength);
             this.groupBoxStarVelocity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxStarVelocity.Location = new System.Drawing.Point(12, 27);
+            this.groupBoxStarVelocity.Location = new System.Drawing.Point(16, 33);
+            this.groupBoxStarVelocity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxStarVelocity.Name = "groupBoxStarVelocity";
-            this.groupBoxStarVelocity.Size = new System.Drawing.Size(135, 105);
+            this.groupBoxStarVelocity.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStarVelocity.Size = new System.Drawing.Size(180, 129);
             this.groupBoxStarVelocity.TabIndex = 1;
             this.groupBoxStarVelocity.TabStop = false;
             this.groupBoxStarVelocity.Text = "Star Velocity";
@@ -152,10 +156,9 @@
             this.labelObservedWavelength.AutoSize = true;
             this.labelObservedWavelength.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelObservedWavelength.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelObservedWavelength.Location = new System.Drawing.Point(5, 16);
-            this.labelObservedWavelength.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelObservedWavelength.Location = new System.Drawing.Point(7, 20);
             this.labelObservedWavelength.Name = "labelObservedWavelength";
-            this.labelObservedWavelength.Size = new System.Drawing.Size(114, 13);
+            this.labelObservedWavelength.Size = new System.Drawing.Size(149, 17);
             this.labelObservedWavelength.TabIndex = 8;
             this.labelObservedWavelength.Text = "Observed Wavelength";
             // 
@@ -164,50 +167,49 @@
             this.labelNM1.AutoSize = true;
             this.labelNM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelNM1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelNM1.Location = new System.Drawing.Point(64, 34);
-            this.labelNM1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNM1.Location = new System.Drawing.Point(85, 42);
             this.labelNM1.Name = "labelNM1";
-            this.labelNM1.Size = new System.Drawing.Size(21, 13);
+            this.labelNM1.Size = new System.Drawing.Size(27, 17);
             this.labelNM1.TabIndex = 9;
             this.labelNM1.Text = "nm";
             // 
             // textBoxObservedWavelength
             // 
-            this.textBoxObservedWavelength.Location = new System.Drawing.Point(8, 31);
-            this.textBoxObservedWavelength.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxObservedWavelength.Location = new System.Drawing.Point(11, 38);
+            this.textBoxObservedWavelength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxObservedWavelength.Name = "textBoxObservedWavelength";
-            this.textBoxObservedWavelength.Size = new System.Drawing.Size(52, 20);
+            this.textBoxObservedWavelength.Size = new System.Drawing.Size(68, 23);
             this.textBoxObservedWavelength.TabIndex = 6;
+            this.textBoxObservedWavelength.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxObservedWavelength_KeyPress);
             // 
             // labelNM2
             // 
             this.labelNM2.AutoSize = true;
             this.labelNM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelNM2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelNM2.Location = new System.Drawing.Point(64, 81);
-            this.labelNM2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNM2.Location = new System.Drawing.Point(85, 100);
             this.labelNM2.Name = "labelNM2";
-            this.labelNM2.Size = new System.Drawing.Size(21, 13);
+            this.labelNM2.Size = new System.Drawing.Size(27, 17);
             this.labelNM2.TabIndex = 10;
             this.labelNM2.Text = "nm";
             // 
             // textBoxRestWavelength
             // 
-            this.textBoxRestWavelength.Location = new System.Drawing.Point(8, 78);
-            this.textBoxRestWavelength.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxRestWavelength.Location = new System.Drawing.Point(11, 96);
+            this.textBoxRestWavelength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRestWavelength.Name = "textBoxRestWavelength";
-            this.textBoxRestWavelength.Size = new System.Drawing.Size(52, 20);
+            this.textBoxRestWavelength.Size = new System.Drawing.Size(68, 23);
             this.textBoxRestWavelength.TabIndex = 7;
+            this.textBoxRestWavelength.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRestWavelength_KeyPress);
             // 
             // labelRestWavelength
             // 
             this.labelRestWavelength.AutoSize = true;
             this.labelRestWavelength.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelRestWavelength.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelRestWavelength.Location = new System.Drawing.Point(5, 63);
-            this.labelRestWavelength.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelRestWavelength.Location = new System.Drawing.Point(7, 78);
             this.labelRestWavelength.Name = "labelRestWavelength";
-            this.labelRestWavelength.Size = new System.Drawing.Size(90, 13);
+            this.labelRestWavelength.Size = new System.Drawing.Size(116, 17);
             this.labelRestWavelength.TabIndex = 11;
             this.labelRestWavelength.Text = "Rest Wavelength";
             // 
@@ -217,9 +219,11 @@
             this.groupBoxStarDistance.Controls.Add(this.labelArcSeconds);
             this.groupBoxStarDistance.Controls.Add(this.textBoxParallaxAngle);
             this.groupBoxStarDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxStarDistance.Location = new System.Drawing.Point(12, 138);
+            this.groupBoxStarDistance.Location = new System.Drawing.Point(16, 170);
+            this.groupBoxStarDistance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxStarDistance.Name = "groupBoxStarDistance";
-            this.groupBoxStarDistance.Size = new System.Drawing.Size(135, 89);
+            this.groupBoxStarDistance.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStarDistance.Size = new System.Drawing.Size(180, 110);
             this.groupBoxStarDistance.TabIndex = 2;
             this.groupBoxStarDistance.TabStop = false;
             this.groupBoxStarDistance.Text = "Star Distance";
@@ -228,10 +232,9 @@
             // 
             this.labelParallaxAngle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelParallaxAngle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelParallaxAngle.Location = new System.Drawing.Point(5, 16);
-            this.labelParallaxAngle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelParallaxAngle.Location = new System.Drawing.Point(7, 20);
             this.labelParallaxAngle.Name = "labelParallaxAngle";
-            this.labelParallaxAngle.Size = new System.Drawing.Size(114, 31);
+            this.labelParallaxAngle.Size = new System.Drawing.Size(152, 38);
             this.labelParallaxAngle.TabIndex = 8;
             this.labelParallaxAngle.Text = "Parallax Angle in Arch Seconds";
             // 
@@ -240,20 +243,20 @@
             this.labelArcSeconds.AutoSize = true;
             this.labelArcSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelArcSeconds.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelArcSeconds.Location = new System.Drawing.Point(64, 52);
-            this.labelArcSeconds.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelArcSeconds.Location = new System.Drawing.Point(85, 64);
             this.labelArcSeconds.Name = "labelArcSeconds";
-            this.labelArcSeconds.Size = new System.Drawing.Size(12, 13);
+            this.labelArcSeconds.Size = new System.Drawing.Size(13, 17);
             this.labelArcSeconds.TabIndex = 9;
             this.labelArcSeconds.Text = "\"";
             // 
             // textBoxParallaxAngle
             // 
-            this.textBoxParallaxAngle.Location = new System.Drawing.Point(8, 49);
-            this.textBoxParallaxAngle.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxParallaxAngle.Location = new System.Drawing.Point(11, 60);
+            this.textBoxParallaxAngle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxParallaxAngle.Name = "textBoxParallaxAngle";
-            this.textBoxParallaxAngle.Size = new System.Drawing.Size(52, 20);
+            this.textBoxParallaxAngle.Size = new System.Drawing.Size(68, 23);
             this.textBoxParallaxAngle.TabIndex = 6;
+            this.textBoxParallaxAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxParallaxAngle_KeyPress);
             // 
             // groupBoxCelcius
             // 
@@ -261,9 +264,11 @@
             this.groupBoxCelcius.Controls.Add(this.labelSymbolCelcius);
             this.groupBoxCelcius.Controls.Add(this.textBoxCelcius);
             this.groupBoxCelcius.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCelcius.Location = new System.Drawing.Point(12, 233);
+            this.groupBoxCelcius.Location = new System.Drawing.Point(16, 287);
+            this.groupBoxCelcius.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxCelcius.Name = "groupBoxCelcius";
-            this.groupBoxCelcius.Size = new System.Drawing.Size(135, 105);
+            this.groupBoxCelcius.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxCelcius.Size = new System.Drawing.Size(180, 129);
             this.groupBoxCelcius.TabIndex = 3;
             this.groupBoxCelcius.TabStop = false;
             this.groupBoxCelcius.Text = "Tempearture Conversion (Kelvin)";
@@ -272,10 +277,9 @@
             // 
             this.labelCelcius.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelCelcius.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelCelcius.Location = new System.Drawing.Point(5, 30);
-            this.labelCelcius.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCelcius.Location = new System.Drawing.Point(7, 37);
             this.labelCelcius.Name = "labelCelcius";
-            this.labelCelcius.Size = new System.Drawing.Size(114, 31);
+            this.labelCelcius.Size = new System.Drawing.Size(152, 38);
             this.labelCelcius.TabIndex = 8;
             this.labelCelcius.Text = "Initial temperature in Celcius";
             // 
@@ -284,20 +288,20 @@
             this.labelSymbolCelcius.AutoSize = true;
             this.labelSymbolCelcius.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelSymbolCelcius.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelSymbolCelcius.Location = new System.Drawing.Point(64, 66);
-            this.labelSymbolCelcius.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSymbolCelcius.Location = new System.Drawing.Point(85, 81);
             this.labelSymbolCelcius.Name = "labelSymbolCelcius";
-            this.labelSymbolCelcius.Size = new System.Drawing.Size(18, 13);
+            this.labelSymbolCelcius.Size = new System.Drawing.Size(23, 17);
             this.labelSymbolCelcius.TabIndex = 9;
             this.labelSymbolCelcius.Text = "°C";
             // 
             // textBoxCelcius
             // 
-            this.textBoxCelcius.Location = new System.Drawing.Point(8, 63);
-            this.textBoxCelcius.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCelcius.Location = new System.Drawing.Point(11, 78);
+            this.textBoxCelcius.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCelcius.Name = "textBoxCelcius";
-            this.textBoxCelcius.Size = new System.Drawing.Size(52, 20);
+            this.textBoxCelcius.Size = new System.Drawing.Size(68, 23);
             this.textBoxCelcius.TabIndex = 6;
+            this.textBoxCelcius.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCelcius_KeyPress);
             // 
             // groupBoxEventHorizon
             // 
@@ -307,9 +311,11 @@
             this.groupBoxEventHorizon.Controls.Add(this.labelExponent);
             this.groupBoxEventHorizon.Controls.Add(this.textBoxMassOfStar);
             this.groupBoxEventHorizon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxEventHorizon.Location = new System.Drawing.Point(12, 344);
+            this.groupBoxEventHorizon.Location = new System.Drawing.Point(16, 423);
+            this.groupBoxEventHorizon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxEventHorizon.Name = "groupBoxEventHorizon";
-            this.groupBoxEventHorizon.Size = new System.Drawing.Size(135, 105);
+            this.groupBoxEventHorizon.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxEventHorizon.Size = new System.Drawing.Size(180, 129);
             this.groupBoxEventHorizon.TabIndex = 10;
             this.groupBoxEventHorizon.TabStop = false;
             this.groupBoxEventHorizon.Text = "Event Horizon";
@@ -319,29 +325,28 @@
             this.labelKilogram.AutoSize = true;
             this.labelKilogram.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelKilogram.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelKilogram.Location = new System.Drawing.Point(111, 53);
-            this.labelKilogram.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelKilogram.Location = new System.Drawing.Point(148, 65);
             this.labelKilogram.Name = "labelKilogram";
-            this.labelKilogram.Size = new System.Drawing.Size(19, 13);
+            this.labelKilogram.Size = new System.Drawing.Size(23, 17);
             this.labelKilogram.TabIndex = 11;
             this.labelKilogram.Text = "kg";
             // 
             // textBoxMassExponent
             // 
-            this.textBoxMassExponent.Location = new System.Drawing.Point(83, 49);
-            this.textBoxMassExponent.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMassExponent.Location = new System.Drawing.Point(111, 60);
+            this.textBoxMassExponent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMassExponent.Name = "textBoxMassExponent";
-            this.textBoxMassExponent.Size = new System.Drawing.Size(26, 20);
+            this.textBoxMassExponent.Size = new System.Drawing.Size(33, 23);
             this.textBoxMassExponent.TabIndex = 10;
+            this.textBoxMassExponent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMassExponent_KeyPress);
             // 
             // labelMassOfStar
             // 
             this.labelMassOfStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelMassOfStar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelMassOfStar.Location = new System.Drawing.Point(5, 16);
-            this.labelMassOfStar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMassOfStar.Location = new System.Drawing.Point(7, 20);
             this.labelMassOfStar.Name = "labelMassOfStar";
-            this.labelMassOfStar.Size = new System.Drawing.Size(114, 31);
+            this.labelMassOfStar.Size = new System.Drawing.Size(152, 38);
             this.labelMassOfStar.TabIndex = 8;
             this.labelMassOfStar.Text = "Mass of Star in Kg";
             // 
@@ -350,20 +355,20 @@
             this.labelExponent.AutoSize = true;
             this.labelExponent.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F);
             this.labelExponent.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelExponent.Location = new System.Drawing.Point(49, 53);
-            this.labelExponent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelExponent.Location = new System.Drawing.Point(65, 65);
             this.labelExponent.Name = "labelExponent";
-            this.labelExponent.Size = new System.Drawing.Size(30, 13);
+            this.labelExponent.Size = new System.Drawing.Size(37, 17);
             this.labelExponent.TabIndex = 9;
             this.labelExponent.Text = "x10^";
             // 
             // textBoxMassOfStar
             // 
-            this.textBoxMassOfStar.Location = new System.Drawing.Point(8, 49);
-            this.textBoxMassOfStar.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMassOfStar.Location = new System.Drawing.Point(11, 60);
+            this.textBoxMassOfStar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMassOfStar.Name = "textBoxMassOfStar";
-            this.textBoxMassOfStar.Size = new System.Drawing.Size(37, 20);
+            this.textBoxMassOfStar.Size = new System.Drawing.Size(48, 23);
             this.textBoxMassOfStar.TabIndex = 6;
+            this.textBoxMassOfStar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMassOfStar_KeyPress);
             // 
             // listView
             // 
@@ -374,9 +379,10 @@
             this.columnHeaderTemperature,
             this.columnHeaderEventHorizon});
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(223, 27);
+            this.listView.Location = new System.Drawing.Point(213, 33);
+            this.listView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(565, 422);
+            this.listView.Size = new System.Drawing.Size(764, 565);
             this.listView.TabIndex = 11;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
@@ -408,20 +414,20 @@
             // 
             // buttonCalculation
             // 
-            this.buttonCalculation.Location = new System.Drawing.Point(153, 172);
+            this.buttonCalculation.Location = new System.Drawing.Point(13, 560);
+            this.buttonCalculation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCalculation.Name = "buttonCalculation";
-            this.buttonCalculation.Size = new System.Drawing.Size(64, 105);
+            this.buttonCalculation.Size = new System.Drawing.Size(183, 38);
             this.buttonCalculation.TabIndex = 12;
             this.buttonCalculation.Text = "Calculate";
-            this.buttonCalculation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCalculation.UseVisualStyleBackColor = true;
             this.buttonCalculation.Click += new System.EventHandler(this.buttonCalculation_Click);
             // 
             // AstroForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 475);
+            this.ClientSize = new System.Drawing.Size(992, 612);
             this.Controls.Add(this.buttonCalculation);
             this.Controls.Add(this.listView);
             this.Controls.Add(this.groupBoxEventHorizon);
@@ -430,6 +436,7 @@
             this.Controls.Add(this.groupBoxStarVelocity);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AstroForm";
             this.Text = "Astronomical Processing App";
             this.menuStrip1.ResumeLayout(false);

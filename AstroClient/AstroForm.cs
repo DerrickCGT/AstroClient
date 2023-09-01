@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
@@ -14,45 +15,70 @@ namespace AstroClient
 {
     public partial class AstroForm : Form
     {
-        string address = "net.pipe://localhost/astromath";
-        NetNamedPipeBinding binding;
-        EndpointAddress ep;
-        IAstroContract channel;
-        int initialRow = 0;
-
+        #region Initialisation
+        int starID = 0;
+        private IAstroContract channel;
+       
         public AstroForm()
         {
             InitializeComponent();
-            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-            EndpointAddress ep = new EndpointAddress(address);
-            IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
         }
+        
+        // Initialize Channel to Endpoint set up by server
+        private void InitializeChannel()
+        {
+        string address = "net.pipe://localhost/astromath";
+        NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
+        EndpointAddress ep = new EndpointAddress(address);
+        channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+        }
+        #endregion
 
-
+        #region Utility
+        private void clearDisplay()
+        {
+            textBoxCelcius.Clear();
+            textBoxMassExponent.Clear();
+            textBoxMassOfStar.Clear();
+            textBoxObservedWavelength.Clear();
+            textBoxParallaxAngle.Clear();
+            textBoxRestWavelength.Clear();
+        }
+        
         private void buttonCalculation_Click(object sender, EventArgs e)
-        {            
-            int currentRow = initialRow + 1;
+        {
+            InitializeChannel();
+            starID += 1;
 
-            ListViewItem lvi = new ListViewItem(currentRow.ToString());
-            lvi.SubItems.Add(calculateStarVelocity(textBoxObservedWavelength, textBoxRestWavelength, channel.StarVelocity));
-            lvi.SubItems.Add(calculateStarDistance(textBoxParallaxAngle, channel.StarDistance));
-            lvi.SubItems.Add(calculateTemperature(textBoxCelcius, channel.TemperatureInKelvin));
-            lvi.SubItems.Add(calculateEventHorizon(textBoxMassOfStar, textBoxMassExponent, channel.EventHorizon));
+            List<string> starList = new List<string>();
+
+            starList.Add(starID.ToString());
+            starList.Add(calculateStarVelocity(textBoxObservedWavelength, textBoxRestWavelength, channel.StarVelocity));
+            starList.Add(calculateStarDistance(textBoxParallaxAngle, channel.StarDistance));
+            starList.Add(calculateTemperature(textBoxCelcius, channel.TemperatureInKelvin));
+            starList.Add(calculateEventHorizon(textBoxMassOfStar, textBoxMassExponent, channel.EventHorizon));
+
+
+            ListViewItem lvi = new ListViewItem(starList.ToArray());
             listView.Items.Add(lvi);
-        }
 
-        private string calculateStarVelocity(TextBox textBox1, TextBox textBox2, Func<double, double, double> Formula)
+            clearDisplay();
+        }
+        #endregion
+
+        #region DLL Function
+        private string calculateStarVelocity(TextBox textBoxObservedWavelength, TextBox textBoxRestWavelength, Func<double, double, double> Formula)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (textBoxObservedWavelength.Text == "" || textBoxRestWavelength.Text == "")
             {
                 return "";
             }
             try
             {
-                double input1 = double.Parse(textBox1.Text);
-                double input2 = double.Parse(textBox2.Text);
-                double output = Formula(input1, input2);
-                return output.ToString("0.##E+00") + " m/s";
+                double input1 = double.Parse(textBoxObservedWavelength.Text);
+                double input2 = double.Parse(textBoxRestWavelength.Text);
+                string output = (input2 == 0) ? "Error: Zero Division" : Formula(input1, input2).ToString("0.##") + " m/s";
+                return output;
             }
             catch (Exception ex)
             {
@@ -61,15 +87,15 @@ namespace AstroClient
             }
         }
 
-        private string calculateStarDistance(TextBox textBox ,Func<double, double> Formula)
+        private string calculateStarDistance(TextBox textBoxParallaxAngle, Func<double, double> Formula)
         {
-            if (textBox.Text == ""){
+            if (textBoxParallaxAngle.Text == ""){
                 return "";
             }
             try
             {
-                double input = double.Parse(textBox.Text);
-                string result = (input <= 0) ? "Error! Invalid Input" : Formula(input).ToString("0.##E+00") + " pc";
+                double input = double.Parse(textBoxParallaxAngle.Text);
+                string result = (input == 0) ? "Error! Zero Division" : Formula(input).ToString("0.##") + " pc";
                 return result;
             }
             catch (Exception ex)
@@ -79,16 +105,16 @@ namespace AstroClient
             }
         }
 
-        private string calculateTemperature(TextBox textBox, Func<double, double> Formula)
+        private string calculateTemperature(TextBox textBoxCelcius, Func<double, double> Formula)
         {
-            if (textBox.Text == "")
+            if (textBoxCelcius.Text == "")
             {
                 return "";
             }
             try
             {
-                double input = double.Parse(textBox.Text);
-                string result = (input < -273) ? "Error! Input must larger than -273" : Formula(input).ToString() + " °K";
+                double input = double.Parse(textBoxCelcius.Text);
+                string result = (input < -273) ? "Error! Input < -273" : Formula(input).ToString("0.##") + " °K";
                 return result;
             }
             catch (Exception ex)
@@ -98,16 +124,16 @@ namespace AstroClient
             }
         }
 
-        private string calculateEventHorizon(TextBox textBox1, TextBox textBox2, Func<double, double> Formula)
+        private string calculateEventHorizon(TextBox textBoxMassOfStar, TextBox textBoxMassExponent, Func<double, double> Formula)
         {
-            if (textBox1.Text == "")
+            if (textBoxMassOfStar.Text == "")
             {
                 return "";
             }
             try
             {
-                double input1 = double.Parse(textBox1.Text);
-                int input2 = int.Parse(textBox2.Text);
+                double input1 = double.Parse(textBoxMassOfStar.Text);
+                int input2 = int.Parse(textBoxMassExponent.Text);
                 double massOfStar = input1 * Math.Pow(10, input2);
                 double output = Formula(massOfStar);
                 return output.ToString("0.##E+00") + " m";
@@ -118,5 +144,42 @@ namespace AstroClient
                 return "Error!";
             }
         }
+        #endregion
+
+        #region KeyPress
+        private void InvalidKeyPress (object sender, KeyPressEventArgs e, TextBox textBox) 
+        {
+            // Regex only accept key: \d is numeric value, . is decimal, \b is backspace, - is negative
+            if (!Regex.IsMatch(e.KeyChar.ToString(), @"[\d.\b-]"))
+                e.Handled = true;
+            // Check if only one decimal
+            if (e.KeyChar == '.' && textBox.Text.Contains("."))
+                e.Handled = true;
+            // Check if negative only apply on first index
+            if (e.KeyChar == '-' && textBox.SelectionStart != 0)
+                e.Handled = true;
+        }
+
+        private void textBoxObservedWavelength_KeyPress(object sender, KeyPressEventArgs e)
+        {            InvalidKeyPress(sender, e, textBoxObservedWavelength);        }
+
+        private void textBoxRestWavelength_KeyPress(object sender, KeyPressEventArgs e)
+        {            InvalidKeyPress(sender, e, textBoxRestWavelength);        }
+
+        private void textBoxParallaxAngle_KeyPress(object sender, KeyPressEventArgs e)
+        {            InvalidKeyPress(sender, e, textBoxParallaxAngle);        }
+
+        private void textBoxCelcius_KeyPress(object sender, KeyPressEventArgs e)
+        {            InvalidKeyPress(sender, e, textBoxCelcius);        }
+
+        private void textBoxMassOfStar_KeyPress(object sender, KeyPressEventArgs e)
+        {            InvalidKeyPress(sender, e, textBoxMassOfStar);        }
+
+        private void textBoxMassExponent_KeyPress(object sender, KeyPressEventArgs e)
+        {            InvalidKeyPress(sender, e, textBoxMassExponent);        }
+
+        #endregion
+
+
     }
 }
