@@ -94,20 +94,20 @@
             // 
             // toolStripMenuItemEnglishUK
             // 
-            this.toolStripMenuItemEnglishUK.Name = "toolStripMenuItemEnglishUK";
             resources.ApplyResources(this.toolStripMenuItemEnglishUK, "toolStripMenuItemEnglishUK");
+            this.toolStripMenuItemEnglishUK.Name = "toolStripMenuItemEnglishUK";
             this.toolStripMenuItemEnglishUK.Click += new System.EventHandler(this.toolStripMenuItemEnglishUK_Click);
             // 
             // toolStripMenuItemFrench
             // 
-            this.toolStripMenuItemFrench.Name = "toolStripMenuItemFrench";
             resources.ApplyResources(this.toolStripMenuItemFrench, "toolStripMenuItemFrench");
+            this.toolStripMenuItemFrench.Name = "toolStripMenuItemFrench";
             this.toolStripMenuItemFrench.Click += new System.EventHandler(this.toolStripMenuItemFrench_Click);
             // 
             // toolStripMenuItemGerman
             // 
-            this.toolStripMenuItemGerman.Name = "toolStripMenuItemGerman";
             resources.ApplyResources(this.toolStripMenuItemGerman, "toolStripMenuItemGerman");
+            this.toolStripMenuItemGerman.Name = "toolStripMenuItemGerman";
             this.toolStripMenuItemGerman.Click += new System.EventHandler(this.toolStripMenuItemGerman_Click);
             // 
             // toolStripMenuItemTheme
