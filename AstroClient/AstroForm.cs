@@ -52,7 +52,7 @@ namespace AstroClient
         // Calculate all the inputs with respective formulas and output to the ListView.
         private void buttonCalculation_Click(object sender, EventArgs e)
         {
-            InitializeChannel(); 
+            InitializeChannel(); // Initialize Channel to AstroServer for implmentation of AstronomicalFormula
             starID += 1;    // Increment the starID to keep track of each calculation.
 
 
