@@ -56,6 +56,9 @@
     <Compile Include="IAstroContract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AstroForm.de-DE.resx">
+      <DependentUpon>AstroForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AstroForm.de.resx">
       <DependentUpon>AstroForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,7 +68,13 @@
     <EmbeddedResource Include="AstroForm.en.resx">
       <DependentUpon>AstroForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AstroForm.fr-FR.resx">
+      <DependentUpon>AstroForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AstroForm.fr.resx">
+      <DependentUpon>AstroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AstroForm.kea.resx">
       <DependentUpon>AstroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AstroForm.resx">

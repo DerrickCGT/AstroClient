@@ -121,7 +121,7 @@
   <data name="toolStripMenuItemEnglishUK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABLAAAAJYCAYAAABy5h8aAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAO2ZJREFUeF7t2r/OZWl21/E24wvgFuy2CLmECUgILFkkk2JpZCG5HfoiCJ0ZaSRL
+        vQAADr0BR/uQrQAAO2ZJREFUeF7t2r/OZWl21/E24wvgFuy2CLmECUgILFkkk2JpZCG5HfoiCJ0ZaSRL
         DrgPkpGMNGMC2xjLoVGblAEP0aAXaqrPTFf1b1W9f87aZ+21P1/pI2Qg8Vvn2c96lvqL//qv/+3T//xP
         f/Ekfbu/+ft/fPr9P/7zp9/8nT96+o3f+kMAhpvef/7n/5LFppfODACz/LPf/urp9/7gT5/+8q//4Zuv
         9/z+78//z9P/+A//8ekv/8W/ivcj93HbW33x8f+F9O0ssgDOYXrfHkLYZ3rpzAAwg8UVlY/3VL9aYFX/
@@ -380,7 +380,7 @@
   <data name="toolStripMenuItemFrench.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAANVCAYAAAAnd1OJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7AAAAOwAFq1okJAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA69AAAOvQFH+5CtAAAAB3RJ
         TUUH5wQTFi0KqO2zGAAAKqpJREFUeF7t2DERgDAAwEC8MCGhPnDBwo4OvGCKCQHFRobP3ZvIsqz3BICq
         /XimJEnlvvOa7zYAIMsABCDNAJQk1TMAAagzAAFIMwAlSfUMQADqDEAA0gxASVI9AxCAOgMQgDQDUJJU
         zwAEoM4ABCDNAJQk1TMAAagzAAFIMwAlSfUMQADqDEAA0gxASVI9AxCAOgMQgDQDUJJUzwAEoM4ABCDN
@@ -569,7 +569,7 @@
   <data name="toolStripMenuItemGerman.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABLAAAALQCAYAAACABYmvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7AAAAOwAFq1okJAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA69AAAOvQFH+5CtAAAAB3RJ
         TUUH4QgKCRgvaBpXrQAAE7dJREFUeF7t2EENwEAQw8DjD64MiuVaAAHgx6w0+wgEn/8uAAAAAITNEQAA
         AAAq5ggAAAAAFXMEAAAAgIo5AgAAAEDFHAEAAACgYo4AAAAAUDFHAAAAAKiYIwAAAABUzBEAAAAAKuYI
         AAAAABVzBAAAAICKOQIAAABAxRwBAAAAoGKOAAAAAFAxRwAAAAComCMAAAAAVMwRAAAAACrmCAAAAAAV
@@ -657,10 +657,28 @@
         moAFAAAAQJqABQAAAECagAUAAABA2LkfpL5XqTAzUTAAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="textBoxObservedWavelength.ToolTip" xml:space="preserve">
+    <value>Entrez la longueur d'onde observée de la lumière de l'étoile en mètres.</value>
+  </data>
+  <data name="textBoxRestWavelength.ToolTip" xml:space="preserve">
+    <value>Entrez la longueur d'onde de repos de la lumière de l'étoile en mètres.</value>
+  </data>
+  <data name="textBoxParallaxAngle.ToolTip" xml:space="preserve">
+    <value>Entrez l'angle de parallaxe de l'étoile en secondes d'arc pour calculer sa distance.</value>
+  </data>
+  <data name="textBoxCelcius.ToolTip" xml:space="preserve">
+    <value>Entrez la température en degrés Celsius pour la conversion en Kelvin.</value>
+  </data>
+  <data name="textBoxMassExponent.ToolTip" xml:space="preserve">
+    <value>Entrez l'exposant de la puissance de 10 (par exemple, pour 10^6, entrez 6) pour calculer l'horizon des événements.</value>
+  </data>
+  <data name="textBoxMassOfStar.ToolTip" xml:space="preserve">
+    <value>Entrez la masse de l'étoile en kilogrammes</value>
+  </data>
   <data name="buttonLanguageGerman.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABLAAAALQCAYAAACABYmvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7AAAAOwAFq1okJAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAB3RJ
         TUUH4QgKCRgvaBpXrQAAE7dJREFUeF7t2EENwEAQw8DjD64MiuVaAAHgx6w0+wgEn/8uAAAAAITNEQAA
         AAAq5ggAAAAAFXMEAAAAgIo5AgAAAEDFHAEAAACgYo4AAAAAUDFHAAAAAKiYIwAAAABUzBEAAAAAKuYI
         AAAAABVzBAAAAICKOQIAAABAxRwBAAAAoGKOAAAAAFAxRwAAAAComCMAAAAAVMwRAAAAACrmCAAAAAAV
@@ -751,7 +769,7 @@
   <data name="buttonLanguageFrench.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABQAAAANVCAYAAAAnd1OJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA6/AAAOvwE4BVMkAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAB3RJ
         TUUH5wQTFi0KqO2zGAAAKqpJREFUeF7t2DERgDAAwEC8MCGhPnDBwo4OvGCKCQHFRobP3ZvIsqz3BICq
         /XimJEnlvvOa7zYAIMsABCDNAJQk1TMAAagzAAFIMwAlSfUMQADqDEAA0gxASVI9AxCAOgMQgDQDUJJU
         zwAEoM4ABCDNAJQk1TMAAagzAAFIMwAlSfUMQADqDEAA0gxASVI9AxCAOgMQgDQDUJJUzwAEoM4ABCDN
@@ -940,7 +958,7 @@
   <data name="buttonLanguageEnglish.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABLAAAAJYCAYAAABy5h8aAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAO2ZJREFUeF7t2r/OZWl21/E24wvgFuy2CLmECUgILFkkk2JpZCG5HfoiCJ0ZaSRL
+        vAAADrwBlbxySQAAO2ZJREFUeF7t2r/OZWl21/E24wvgFuy2CLmECUgILFkkk2JpZCG5HfoiCJ0ZaSRL
         DrgPkpGMNGMC2xjLoVGblAEP0aAXaqrPTFf1b1W9f87aZ+21P1/pI2Qg8Vvn2c96lvqL//qv/+3T//xP
         f/Ekfbu/+ft/fPr9P/7zp9/8nT96+o3f+kMAhpvef/7n/5LFppfODACz/LPf/urp9/7gT5/+8q//4Zuv
         9/z+78//z9P/+A//8ekv/8W/ivcj93HbW33x8f+F9O0ssgDOYXrfHkLYZ3rpzAAwg8UVlY/3VL9aYFX/
@@ -1195,5 +1213,20 @@
         ZgB4LIssVVV7qV8tsCyu+llcAdBleuleZI/ppTMDwAwWWar6eE/1xc9+/JOnv/3dH34whHBfP/3y+09f
         /8mfPf3in37+zT/D/CyuAM5leul+ZI/ppTMDwCwWWap6v7f64dP/A6vqeeoYRXKxAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="groupBoxLanguage.Text" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Thème de Couleur</value>
+  </data>
+  <data name="buttonDarkMode.Text" xml:space="preserve">
+    <value>Sombre</value>
+  </data>
+  <data name="buttonLightMode.Text" xml:space="preserve">
+    <value>Clair</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>896, 493</value>
   </data>
 </root>

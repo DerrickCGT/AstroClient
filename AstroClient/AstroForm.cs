@@ -228,6 +228,15 @@ namespace AstroClient
 
         private void toolStripMenuItemGerman_Click(object sender, EventArgs e)
         {            { ChangeLanguage("German"); } }
+
+        private void buttonLanguageEnglish_Click(object sender, EventArgs e)
+        {            { ChangeLanguage("English"); }        }
+
+        private void buttonLanguageFrench_Click(object sender, EventArgs e)
+        {            { ChangeLanguage("French"); }        }
+
+        private void buttonLanguageGerman_Click(object sender, EventArgs e)
+        {            { ChangeLanguage("German"); }        }
         #endregion
 
         #region Colour Selection
@@ -272,6 +281,56 @@ namespace AstroClient
         // User selection for Light Colour Theme for the application.
         private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            LightMode();
+        }
+
+        // Event handler for the "Dark Mode" menu item. 
+        // User selection for Dark Colour Theme for the application.
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DarkMode();
+        }
+
+        private void DarkMode()
+        {
+            BackColor = Color.Black;
+            ForeColor = Color.White;
+
+            // To apply color to columnheader, set OwnerDrawing in listView properties = true;
+            // listView.DrawColumnHeader += new DrawListViewColumnHeaderEventHandler(listView_DrawColumnHeaderDark);
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.FromArgb(66, 66, 66); // Slightly lighter gray
+                button.ForeColor = Color.White;
+            }
+
+            foreach (var label in Controls.OfType<Label>())
+            {
+                label.ForeColor = Color.White;
+            }
+
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = Color.White;
+            }
+
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = Color.White;
+                groupBox.BackColor = Color.Black;
+            }
+
+            if (listView != null)
+            {
+                listView.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
+                listView.ForeColor = Color.White;
+            }
+        }
+
+        private void LightMode()
+        {
             // Background color
             BackColor = Color.White;
 
@@ -303,6 +362,7 @@ namespace AstroClient
             foreach (var groupBox in Controls.OfType<GroupBox>())
             {
                 groupBox.ForeColor = Color.Black;
+                groupBox.BackColor = Color.White;
             }
 
             // ListView
@@ -313,46 +373,15 @@ namespace AstroClient
             }
         }
 
-        // Event handler for the "Dark Mode" menu item. 
-        // User selection for Dark Colour Theme for the application.
-        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buttonLightMode_Click(object sender, EventArgs e)
         {
-            BackColor = Color.Black;
-            ForeColor = Color.White;
-
-            // To apply color to columnheader, set OwnerDrawing in listView properties = true;
-            // listView.DrawColumnHeader += new DrawListViewColumnHeaderEventHandler(listView_DrawColumnHeaderDark);
-            foreach (var button in Controls.OfType<Button>())
-            {
-                button.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
-                button.FlatStyle = FlatStyle.Flat;
-                button.FlatAppearance.BorderColor = Color.FromArgb(66, 66, 66); // Slightly lighter gray
-                button.ForeColor = Color.White;
-            }
-
-            foreach (var label in Controls.OfType<Label>())
-            {
-                label.ForeColor = Color.White;
-            }
-
-            foreach (var textBox in Controls.OfType<TextBox>())
-            {
-                textBox.ForeColor = Color.White;
-            }
-
-            foreach (var groupBox in Controls.OfType<GroupBox>())
-            {
-                groupBox.ForeColor = Color.White;
-            }
-
-            if (listView != null)
-            {
-                listView.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
-                listView.ForeColor = Color.White;
-            }
-
+            LightMode();
         }
 
+        private void buttonDarkMode_Click(object sender, EventArgs e)
+        {
+            DarkMode();
+        }
 
         // To manually change the colour setting of column header in ListView
         //private void listView_DrawColumnHeaderDark(object sender, DrawListViewColumnHeaderEventArgs e)
@@ -380,6 +409,7 @@ namespace AstroClient
         //    e.Graphics.DrawString(e.Header.Text, e.Font, Brushes.Black, newBounds);
         //}
         #endregion
+
 
     }
 }
