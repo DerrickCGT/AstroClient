@@ -18,15 +18,15 @@ namespace AstroClient
     public partial class AstroForm : Form
     {
         #region Initialisation
-        int starID = 0;
-        private IAstroContract channel;
+        int starID = 0; // Initialize StarID.
+        private IAstroContract channel; // Initialize instance IAstroContract.
        
         public AstroForm()
         {
             InitializeComponent();
         }
         
-        // Initialize Channel to Endpoint set up by server
+        // Initialize Channel to Endpoint set up by server.
         private void InitializeChannel()
         {
         string address = "net.pipe://localhost/astromath";
@@ -37,6 +37,7 @@ namespace AstroClient
         #endregion
 
         #region Utility
+        // Method to clear display on all textBox.
         private void clearDisplay()
         {
             textBoxCelcius.Clear();
@@ -47,10 +48,13 @@ namespace AstroClient
             textBoxRestWavelength.Clear();
         }
         
+        // Event handler for the "Calculate" button.
+        // Calculate all the inputs with respective formulas and output to the ListView.
         private void buttonCalculation_Click(object sender, EventArgs e)
         {
-            InitializeChannel();
-            starID += 1;
+            InitializeChannel(); 
+            starID += 1;    // Increment the starID to keep track of each calculation.
+
 
             List<string> starList = new List<string>();
 
@@ -60,7 +64,7 @@ namespace AstroClient
             starList.Add(calculateTemperature(textBoxCelcius, channel.TemperatureInKelvin));
             starList.Add(calculateEventHorizon(textBoxMassOfStar, textBoxMassExponent, channel.EventHorizon));
 
-
+            // Create a ListView Item from the starList and add it to the listView.
             ListViewItem lvi = new ListViewItem(starList.ToArray());
             listView.Items.Add(lvi);
 
@@ -69,6 +73,7 @@ namespace AstroClient
         #endregion
 
         #region DLL Function
+        // Calculate Star Velocity based on user input.
         private string calculateStarVelocity(TextBox textBoxObservedWavelength, TextBox textBoxRestWavelength, Func<double, double, double> Formula)
         {
             if (textBoxObservedWavelength.Text == "" || textBoxRestWavelength.Text == "")
@@ -89,6 +94,7 @@ namespace AstroClient
             }
         }
 
+        // Calculate Star Distance based on user input.
         private string calculateStarDistance(TextBox textBoxParallaxAngle, Func<double, double> Formula)
         {
             if (textBoxParallaxAngle.Text == ""){
@@ -107,6 +113,7 @@ namespace AstroClient
             }
         }
 
+        // Calculate Temperature based on user input.
         private string calculateTemperature(TextBox textBoxCelcius, Func<double, double> Formula)
         {
             if (textBoxCelcius.Text == "")
@@ -125,7 +132,8 @@ namespace AstroClient
                 return "Error!";
             }
         }
-
+        
+        // Calculate Event Horizon based on user input.
         private string calculateEventHorizon(TextBox textBoxMassOfStar, TextBox textBoxMassExponent, Func<double, double> Formula)
         {
             if (textBoxMassOfStar.Text == "")
@@ -149,6 +157,7 @@ namespace AstroClient
         #endregion
 
         #region KeyPress
+        // Handle invalid keypress events for textboxes.
         private void InvalidKeyPress (object sender, KeyPressEventArgs e, TextBox textBox) 
         {
             // Regex only accept key: \d is numeric value, . is decimal, \b is backspace, - is negative
@@ -183,8 +192,10 @@ namespace AstroClient
         #endregion
 
         #region Language Globalization 
+        // This method changes the application's language based on the selected language parameter.
         private void ChangeLanguage(string language)
         {
+            // Set the current UI culture to Selected Language.
             switch (language)
             {
                 case "English":
@@ -197,48 +208,55 @@ namespace AstroClient
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
                     break;
             }
+
+            // Clear all controls in the form.
             Controls.Clear();
+
+            // Reinitialize the form components to apply the selected language.
             InitializeComponent();
         }
 
         private void toolStripMenuItemEnglishUK_Click(object sender, EventArgs e)
-        {
-            { ChangeLanguage("English"); }
-        }
+        {            { ChangeLanguage("English"); }        }
 
         private void toolStripMenuItemFrench_Click(object sender, EventArgs e)
-        {
-            { ChangeLanguage("French"); }
-        }
+        {            { ChangeLanguage("French"); }        }
 
         private void toolStripMenuItemGerman_Click(object sender, EventArgs e)
-        {
-            { ChangeLanguage("German"); }
-        }
+        {            { ChangeLanguage("German"); } }
         #endregion
 
         #region Colour Selection
+        // Event handler for the "Choose Colour" menu item.
         private void toolStripMenuItemColour_Click(object sender, EventArgs e)
         {
-            // Instance of ColorDialog
+            // Create instance of ColorDialog to let the user choose a color.
             ColorDialog colorDlg = new ColorDialog();
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
                 BackgroundImage = null;
                 BackColor = colorDlg.Color;
+
+                // Calculate inverse text color based on the background color. 
                 byte r = (byte)(255 - BackColor.R);
                 byte g = (byte)(255 - BackColor.G);
                 byte b = (byte)(255 - BackColor.B);
+
                 ForeColor = Color.FromArgb(r, g, b);
+
+                // Update button background colors.
                 foreach (var button in Controls.OfType<Button>())
                 {
                     button.BackColor = colorDlg.Color;
                 }
+
+                // Update text box text colors.
                 foreach (var textBox in Controls.OfType<TextBox>())
                 {
                     textBox.ForeColor = Color.FromArgb(r, g, b);
                 }
 
+                // Update group box text colors.
                 foreach (var groupBox in Controls.OfType<GroupBox>())
                 {
                     groupBox.ForeColor = Color.FromArgb(r, g, b);
@@ -246,6 +264,8 @@ namespace AstroClient
             }
         }
 
+        // Event handler for the "Light Mode" menu item. 
+        // User selection for Light Colour Theme for the application.
         private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Background color
@@ -281,6 +301,7 @@ namespace AstroClient
                 groupBox.ForeColor = Color.Black;
             }
 
+            // ListView
             if (listView != null)
             {
                 listView.BackColor = Color.White;
@@ -288,13 +309,15 @@ namespace AstroClient
             }
         }
 
+        // Event handler for the "Dark Mode" menu item. 
+        // User selection for Dark Colour Theme for the application.
         private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BackColor = Color.Black;
             ForeColor = Color.White;
+
             // To apply color to columnheader, set OwnerDrawing in listView properties = true;
             // listView.DrawColumnHeader += new DrawListViewColumnHeaderEventHandler(listView_DrawColumnHeaderDark);
-
             foreach (var button in Controls.OfType<Button>())
             {
                 button.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
@@ -327,7 +350,7 @@ namespace AstroClient
         }
 
 
-
+        // To manually change the colour setting of column header in ListView
         //private void listView_DrawColumnHeaderDark(object sender, DrawListViewColumnHeaderEventArgs e)
         //{
 
