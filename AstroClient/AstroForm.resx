@@ -120,7 +120,907 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="toolStripMenuItemLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="toolStripMenuItemLanguage.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="toolStripMenuItemEnglishUK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="toolStripMenuItemEnglishUK.Text" xml:space="preserve">
+    <value>English UK</value>
+  </data>
+  <data name="toolStripMenuItemFrench.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="toolStripMenuItemFrench.Text" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="toolStripMenuItemGerman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="toolStripMenuItemGerman.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="toolStripMenuItemTheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="toolStripMenuItemTheme.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="toolStripMenuItemBackgroundMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 22</value>
+  </data>
+  <data name="toolStripMenuItemBackgroundMode.Text" xml:space="preserve">
+    <value>Light/Dark Theme</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Light Mode</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dark Mode</value>
+  </data>
+  <data name="toolStripMenuItemColour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 22</value>
+  </data>
+  <data name="toolStripMenuItemColour.Text" xml:space="preserve">
+    <value>Select Background Colour</value>
+  </data>
+  <data name="labelObservedWavelength.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelObservedWavelength.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelObservedWavelength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelObservedWavelength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 16</value>
+  </data>
+  <data name="labelObservedWavelength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelObservedWavelength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="labelObservedWavelength.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelObservedWavelength.Text" xml:space="preserve">
+    <value>Observed Wavelength</value>
+  </data>
+  <data name="&gt;&gt;labelObservedWavelength.Name" xml:space="preserve">
+    <value>labelObservedWavelength</value>
+  </data>
+  <data name="&gt;&gt;labelObservedWavelength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelObservedWavelength.Parent" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;labelObservedWavelength.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelNM1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelNM1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelNM1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelNM1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 34</value>
+  </data>
+  <data name="labelNM1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelNM1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="labelNM1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelNM1.Text" xml:space="preserve">
+    <value>nm</value>
+  </data>
+  <data name="&gt;&gt;labelNM1.Name" xml:space="preserve">
+    <value>labelNM1</value>
+  </data>
+  <data name="&gt;&gt;labelNM1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNM1.Parent" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;labelNM1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxObservedWavelength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 31</value>
+  </data>
+  <data name="textBoxObservedWavelength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBoxObservedWavelength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="textBoxObservedWavelength.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBoxObservedWavelength.Name" xml:space="preserve">
+    <value>textBoxObservedWavelength</value>
+  </data>
+  <data name="&gt;&gt;textBoxObservedWavelength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxObservedWavelength.Parent" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;textBoxObservedWavelength.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelNM2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelNM2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelNM2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelNM2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 81</value>
+  </data>
+  <data name="labelNM2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelNM2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="labelNM2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelNM2.Text" xml:space="preserve">
+    <value>nm</value>
+  </data>
+  <data name="&gt;&gt;labelNM2.Name" xml:space="preserve">
+    <value>labelNM2</value>
+  </data>
+  <data name="&gt;&gt;labelNM2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNM2.Parent" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;labelNM2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxRestWavelength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 78</value>
+  </data>
+  <data name="textBoxRestWavelength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBoxRestWavelength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="textBoxRestWavelength.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBoxRestWavelength.Name" xml:space="preserve">
+    <value>textBoxRestWavelength</value>
+  </data>
+  <data name="&gt;&gt;textBoxRestWavelength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxRestWavelength.Parent" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;textBoxRestWavelength.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelRestWavelength.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelRestWavelength.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelRestWavelength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelRestWavelength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 63</value>
+  </data>
+  <data name="labelRestWavelength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelRestWavelength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="labelRestWavelength.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelRestWavelength.Text" xml:space="preserve">
+    <value>Rest Wavelength</value>
+  </data>
+  <data name="&gt;&gt;labelRestWavelength.Name" xml:space="preserve">
+    <value>labelRestWavelength</value>
+  </data>
+  <data name="&gt;&gt;labelRestWavelength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRestWavelength.Parent" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;labelRestWavelength.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBoxStarVelocity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxStarVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="groupBoxStarVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 105</value>
+  </data>
+  <data name="groupBoxStarVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxStarVelocity.Text" xml:space="preserve">
+    <value>Star Velocity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarVelocity.Name" xml:space="preserve">
+    <value>groupBoxStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarVelocity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarVelocity.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelParallaxAngle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelParallaxAngle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelParallaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 31</value>
+  </data>
+  <data name="labelParallaxAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelParallaxAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 31</value>
+  </data>
+  <data name="labelParallaxAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelParallaxAngle.Text" xml:space="preserve">
+    <value>Parallax Angle in Arch Seconds</value>
+  </data>
+  <data name="&gt;&gt;labelParallaxAngle.Name" xml:space="preserve">
+    <value>labelParallaxAngle</value>
+  </data>
+  <data name="&gt;&gt;labelParallaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelParallaxAngle.Parent" xml:space="preserve">
+    <value>groupBoxStarDistance</value>
+  </data>
+  <data name="&gt;&gt;labelParallaxAngle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelArcSeconds.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelArcSeconds.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelArcSeconds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelArcSeconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 64</value>
+  </data>
+  <data name="labelArcSeconds.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelArcSeconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="labelArcSeconds.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelArcSeconds.Text" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="&gt;&gt;labelArcSeconds.Name" xml:space="preserve">
+    <value>labelArcSeconds</value>
+  </data>
+  <data name="&gt;&gt;labelArcSeconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelArcSeconds.Parent" xml:space="preserve">
+    <value>groupBoxStarDistance</value>
+  </data>
+  <data name="&gt;&gt;labelArcSeconds.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxParallaxAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 64</value>
+  </data>
+  <data name="textBoxParallaxAngle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBoxParallaxAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="textBoxParallaxAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBoxParallaxAngle.Name" xml:space="preserve">
+    <value>textBoxParallaxAngle</value>
+  </data>
+  <data name="&gt;&gt;textBoxParallaxAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxParallaxAngle.Parent" xml:space="preserve">
+    <value>groupBoxStarDistance</value>
+  </data>
+  <data name="&gt;&gt;textBoxParallaxAngle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxStarDistance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxStarDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 138</value>
+  </data>
+  <data name="groupBoxStarDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 89</value>
+  </data>
+  <data name="groupBoxStarDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxStarDistance.Text" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarDistance.Name" xml:space="preserve">
+    <value>groupBoxStarDistance</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarDistance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStarDistance.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelCelcius.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelCelcius.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCelcius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 47</value>
+  </data>
+  <data name="labelCelcius.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelCelcius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 31</value>
+  </data>
+  <data name="labelCelcius.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelCelcius.Text" xml:space="preserve">
+    <value>Initial temperature in Celcius</value>
+  </data>
+  <data name="&gt;&gt;labelCelcius.Name" xml:space="preserve">
+    <value>labelCelcius</value>
+  </data>
+  <data name="&gt;&gt;labelCelcius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCelcius.Parent" xml:space="preserve">
+    <value>groupBoxCelcius</value>
+  </data>
+  <data name="&gt;&gt;labelCelcius.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelSymbolCelcius.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSymbolCelcius.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelSymbolCelcius.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSymbolCelcius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 83</value>
+  </data>
+  <data name="labelSymbolCelcius.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelSymbolCelcius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="labelSymbolCelcius.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelSymbolCelcius.Text" xml:space="preserve">
+    <value>°C</value>
+  </data>
+  <data name="&gt;&gt;labelSymbolCelcius.Name" xml:space="preserve">
+    <value>labelSymbolCelcius</value>
+  </data>
+  <data name="&gt;&gt;labelSymbolCelcius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSymbolCelcius.Parent" xml:space="preserve">
+    <value>groupBoxCelcius</value>
+  </data>
+  <data name="&gt;&gt;labelSymbolCelcius.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxCelcius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 80</value>
+  </data>
+  <data name="textBoxCelcius.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBoxCelcius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="textBoxCelcius.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelcius.Name" xml:space="preserve">
+    <value>textBoxCelcius</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelcius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelcius.Parent" xml:space="preserve">
+    <value>groupBoxCelcius</value>
+  </data>
+  <data name="&gt;&gt;textBoxCelcius.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxCelcius.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxCelcius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 233</value>
+  </data>
+  <data name="groupBoxCelcius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 105</value>
+  </data>
+  <data name="groupBoxCelcius.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxCelcius.Text" xml:space="preserve">
+    <value>Tempearture Conversion (Kelvin)</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCelcius.Name" xml:space="preserve">
+    <value>groupBoxCelcius</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCelcius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCelcius.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCelcius.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelKilogram.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelKilogram.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelKilogram.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelKilogram.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 71</value>
+  </data>
+  <data name="labelKilogram.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelKilogram.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 13</value>
+  </data>
+  <data name="labelKilogram.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelKilogram.Text" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="&gt;&gt;labelKilogram.Name" xml:space="preserve">
+    <value>labelKilogram</value>
+  </data>
+  <data name="&gt;&gt;labelKilogram.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelKilogram.Parent" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;labelKilogram.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxMassExponent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 68</value>
+  </data>
+  <data name="textBoxMassExponent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBoxMassExponent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 20</value>
+  </data>
+  <data name="textBoxMassExponent.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassExponent.Name" xml:space="preserve">
+    <value>textBoxMassExponent</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassExponent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassExponent.Parent" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassExponent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelMassOfStar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelMassOfStar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelMassOfStar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 35</value>
+  </data>
+  <data name="labelMassOfStar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelMassOfStar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 31</value>
+  </data>
+  <data name="labelMassOfStar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelMassOfStar.Text" xml:space="preserve">
+    <value>Mass of Star in Kg</value>
+  </data>
+  <data name="&gt;&gt;labelMassOfStar.Name" xml:space="preserve">
+    <value>labelMassOfStar</value>
+  </data>
+  <data name="&gt;&gt;labelMassOfStar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMassOfStar.Parent" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;labelMassOfStar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelExponent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelExponent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.875pt</value>
+  </data>
+  <data name="labelExponent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelExponent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 71</value>
+  </data>
+  <data name="labelExponent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="labelExponent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="labelExponent.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelExponent.Text" xml:space="preserve">
+    <value>x10^</value>
+  </data>
+  <data name="&gt;&gt;labelExponent.Name" xml:space="preserve">
+    <value>labelExponent</value>
+  </data>
+  <data name="&gt;&gt;labelExponent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExponent.Parent" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;labelExponent.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxMassOfStar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 68</value>
+  </data>
+  <data name="textBoxMassOfStar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="textBoxMassOfStar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="textBoxMassOfStar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassOfStar.Name" xml:space="preserve">
+    <value>textBoxMassOfStar</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassOfStar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassOfStar.Parent" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;textBoxMassOfStar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBoxEventHorizon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 344</value>
+  </data>
+  <data name="groupBoxEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 105</value>
+  </data>
+  <data name="groupBoxEventHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="groupBoxEventHorizon.Text" xml:space="preserve">
+    <value>Event Horizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.Name" xml:space="preserve">
+    <value>groupBoxEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxEventHorizon.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="columnHeaderStarNo.Text" xml:space="preserve">
+    <value>Star No.</value>
+  </data>
+  <data name="columnHeaderStarNo.Width" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="columnHeaderStarVelocity.Text" xml:space="preserve">
+    <value>Star Velocity</value>
+  </data>
+  <data name="columnHeaderStarVelocity.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="columnHeaderStarDistance.Text" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="columnHeaderStarDistance.Width" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="columnHeaderTemperature.Text" xml:space="preserve">
+    <value>Temperature (°K)</value>
+  </data>
+  <data name="columnHeaderTemperature.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="columnHeaderEventHorizon.Text" xml:space="preserve">
+    <value> Schwarzschild Radius </value>
+  </data>
+  <data name="columnHeaderEventHorizon.Width" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="listView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 27</value>
+  </data>
+  <data name="listView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>548, 460</value>
+  </data>
+  <data name="listView.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;listView.Name" xml:space="preserve">
+    <value>listView</value>
+  </data>
+  <data name="&gt;&gt;listView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonCalculation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 455</value>
+  </data>
+  <data name="buttonCalculation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 31</value>
+  </data>
+  <data name="buttonCalculation.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="buttonCalculation.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;buttonCalculation.Name" xml:space="preserve">
+    <value>buttonCalculation</value>
+  </data>
+  <data name="&gt;&gt;buttonCalculation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCalculation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonCalculation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>746, 521</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Astronomical Processing App</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLanguage.Name" xml:space="preserve">
+    <value>toolStripMenuItemLanguage</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEnglishUK.Name" xml:space="preserve">
+    <value>toolStripMenuItemEnglishUK</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEnglishUK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemFrench.Name" xml:space="preserve">
+    <value>toolStripMenuItemFrench</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemFrench.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemGerman.Name" xml:space="preserve">
+    <value>toolStripMenuItemGerman</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemGerman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemTheme.Name" xml:space="preserve">
+    <value>toolStripMenuItemTheme</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemTheme.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemBackgroundMode.Name" xml:space="preserve">
+    <value>toolStripMenuItemBackgroundMode</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemBackgroundMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lightModeToolStripMenuItem.Name" xml:space="preserve">
+    <value>lightModeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lightModeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;darkModeToolStripMenuItem.Name" xml:space="preserve">
+    <value>darkModeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;darkModeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemColour.Name" xml:space="preserve">
+    <value>toolStripMenuItemColour</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemColour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderStarNo.Name" xml:space="preserve">
+    <value>columnHeaderStarNo</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderStarNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderStarVelocity.Name" xml:space="preserve">
+    <value>columnHeaderStarVelocity</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderStarVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderStarDistance.Name" xml:space="preserve">
+    <value>columnHeaderStarDistance</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderStarDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderTemperature.Name" xml:space="preserve">
+    <value>columnHeaderTemperature</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderTemperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderEventHorizon.Name" xml:space="preserve">
+    <value>columnHeaderEventHorizon</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AstroForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

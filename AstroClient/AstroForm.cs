@@ -182,7 +182,7 @@ namespace AstroClient
 
         #endregion
 
-        #region Globalization
+        #region Language Globalization 
         private void ChangeLanguage(string language)
         {
             switch (language)
@@ -201,9 +201,6 @@ namespace AstroClient
             InitializeComponent();
         }
 
-
-        #endregion
-
         private void toolStripMenuItemEnglishUK_Click(object sender, EventArgs e)
         {
             { ChangeLanguage("English"); }
@@ -218,5 +215,144 @@ namespace AstroClient
         {
             { ChangeLanguage("German"); }
         }
+        #endregion
+
+        #region Colour Selection
+        private void toolStripMenuItemColour_Click(object sender, EventArgs e)
+        {
+            // Instance of ColorDialog
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                BackgroundImage = null;
+                BackColor = colorDlg.Color;
+                byte r = (byte)(255 - BackColor.R);
+                byte g = (byte)(255 - BackColor.G);
+                byte b = (byte)(255 - BackColor.B);
+                ForeColor = Color.FromArgb(r, g, b);
+                foreach (var button in Controls.OfType<Button>())
+                {
+                    button.BackColor = colorDlg.Color;
+                }
+                foreach (var textBox in Controls.OfType<TextBox>())
+                {
+                    textBox.ForeColor = Color.FromArgb(r, g, b);
+                }
+
+                foreach (var groupBox in Controls.OfType<GroupBox>())
+                {
+                    groupBox.ForeColor = Color.FromArgb(r, g, b);
+                }
+            }
+        }
+
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Background color
+            BackColor = Color.White;
+
+            // Foreground color
+            ForeColor = Color.Black;
+
+            // Buttons
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.White;
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.LightGray;
+                button.ForeColor = Color.Black;
+            }
+
+            // Labels
+            foreach (var label in Controls.OfType<Label>())
+            {
+                label.ForeColor = Color.Black;
+            }
+
+            // Textboxes
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = Color.Black;
+            }
+
+            // GroupBoxes
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = Color.Black;
+            }
+
+            if (listView != null)
+            {
+                listView.BackColor = Color.White;
+                listView.ForeColor = Color.Black;
+            }
+        }
+
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.Black;
+            ForeColor = Color.White;
+            // To apply color to columnheader, set OwnerDrawing in listView properties = true;
+            // listView.DrawColumnHeader += new DrawListViewColumnHeaderEventHandler(listView_DrawColumnHeaderDark);
+
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
+                button.FlatStyle = FlatStyle.Flat;
+                button.FlatAppearance.BorderColor = Color.FromArgb(66, 66, 66); // Slightly lighter gray
+                button.ForeColor = Color.White;
+            }
+
+            foreach (var label in Controls.OfType<Label>())
+            {
+                label.ForeColor = Color.White;
+            }
+
+            foreach (var textBox in Controls.OfType<TextBox>())
+            {
+                textBox.ForeColor = Color.White;
+            }
+
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = Color.White;
+            }
+
+            if (listView != null)
+            {
+                listView.BackColor = Color.FromArgb(38, 38, 38); // Dark gray
+                listView.ForeColor = Color.White;
+            }
+
+        }
+
+
+
+        //private void listView_DrawColumnHeaderDark(object sender, DrawListViewColumnHeaderEventArgs e)
+        //{
+
+        //    Console.WriteLine("DrawColumnHeader event handler executed.");
+        //    e.Graphics.FillRectangle(Brushes.Black, e.Bounds); //Fill header with color
+
+        //    //Adjust the position of the text to be vertically centered
+        //    int yOffset = (e.Bounds.Height - e.Graphics.MeasureString(e.Header.Text, e.Font).ToSize().Height) / 2;
+        //    Rectangle newBounds = new Rectangle(e.Bounds.X, e.Bounds.Y + yOffset, e.Bounds.Width, e.Bounds.Height - yOffset);
+
+        //    e.Graphics.DrawString(e.Header.Text, e.Font, Brushes.White, newBounds);
+        //}
+        //private void listView_DrawColumnHeaderDefault (object sender, DrawListViewColumnHeaderEventArgs e)
+        //{
+
+        //    Console.WriteLine("DrawColumnHeader event handler executed.");
+        //    e.Graphics.FillRectangle(Brushes.White, e.Bounds); //Fill header with color
+
+        //    //Adjust the position of the text to be vertically centered
+        //    int yOffset = (e.Bounds.Height - e.Graphics.MeasureString(e.Header.Text, e.Font).ToSize().Height) / 2;
+        //    Rectangle newBounds = new Rectangle(e.Bounds.X, e.Bounds.Y + yOffset, e.Bounds.Width, e.Bounds.Height - yOffset);
+
+        //    e.Graphics.DrawString(e.Header.Text, e.Font, Brushes.Black, newBounds);
+        //}
+        #endregion
+
     }
 }
