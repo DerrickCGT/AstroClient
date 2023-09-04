@@ -13,6 +13,10 @@ using System.ServiceModel;
 using System.Globalization;
 using System.Threading;
 
+// Name: Derrick Choong
+// ID: 30066568
+// Date: 04/09/2023
+
 namespace AstroClient
 {
     public partial class AstroForm : Form
