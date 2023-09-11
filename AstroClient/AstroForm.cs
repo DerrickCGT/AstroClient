@@ -171,7 +171,7 @@ namespace AstroClient
             }
             else
             {
-                return "Error: Zero Division";
+                return "Error: Input < -273";
             }
         }
 
