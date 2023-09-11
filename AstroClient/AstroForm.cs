@@ -89,7 +89,7 @@ namespace AstroClient
                 double input1 = double.Parse(textBoxObservedWavelength.Text);
                 double input2 = double.Parse(textBoxRestWavelength.Text);
                 string result = (input2 == 0) ? ErrorZeroDivision(Thread.CurrentThread.CurrentUICulture.Name) : 
-                    Formula(input1, input2).ToString("0.##") + " pc";
+                    Formula(input1, input2).ToString("0.##E+00") + " m/s";
                 return result;
             }
             catch (Exception ex)
