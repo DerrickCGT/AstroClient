@@ -88,7 +88,7 @@ namespace AstroClient
             {
                 double input1 = double.Parse(textBoxObservedWavelength.Text);
                 double input2 = double.Parse(textBoxRestWavelength.Text);
-                string output = (input2 == 0) ? "Error: Zero Division" : Formula(input1, input2).ToString("0.##") + " m/s";
+                string output = (input2 == 0) ? "Error: Zero Division" : Formula(input1, input2).ToString("0.##E+00") + " m/s";
                 return output;
             }
             catch (Exception ex)
@@ -221,27 +221,81 @@ namespace AstroClient
         }
 
         private void toolStripMenuItemEnglishUK_Click(object sender, EventArgs e)
-        {            { ChangeLanguage("English"); }        }
+        {            
+            { ChangeLanguage("English"); }
+            LightMode();
+        }
 
         private void toolStripMenuItemFrench_Click(object sender, EventArgs e)
-        {            { ChangeLanguage("French"); }        }
+        {            
+            { ChangeLanguage("French"); }
+            LightMode();
+        }
 
         private void toolStripMenuItemGerman_Click(object sender, EventArgs e)
-        {            { ChangeLanguage("German"); } }
+        {            
+            { ChangeLanguage("German"); }
+            LightMode();
+        }
 
         private void buttonLanguageEnglish_Click(object sender, EventArgs e)
-        {            { ChangeLanguage("English"); }        }
+        {            
+            { ChangeLanguage("English"); }
+            LightMode();
+        }
 
         private void buttonLanguageFrench_Click(object sender, EventArgs e)
-        {            { ChangeLanguage("French"); }        }
+        {            
+            { ChangeLanguage("French"); }
+            LightMode();
+        }
 
         private void buttonLanguageGerman_Click(object sender, EventArgs e)
-        {            { ChangeLanguage("German"); }        }
+        {            
+            { ChangeLanguage("German"); }
+            LightMode();
+        }
         #endregion
 
         #region Colour Selection
         // Event handler for the "Choose Colour" menu item.
         private void toolStripMenuItemColour_Click(object sender, EventArgs e)
+        {
+            customizeColorMode();
+        }
+
+        // Event handler for the "Light Mode" menu item. 
+        // User selection for Light Colour Theme for the application.
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LightMode();
+        }
+
+        // Event handler for the "Dark Mode" menu item. 
+        // User selection for Dark Colour Theme for the application.
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DarkMode();
+        }
+
+        // Event Handler for the customize color button
+        private void buttonCustomizeMode_Click(object sender, EventArgs e)
+        {
+            customizeColorMode();
+        }
+
+        private void buttonLightMode_Click(object sender, EventArgs e)
+        {
+            LightMode();
+        }
+
+        private void buttonDarkMode_Click(object sender, EventArgs e)
+        {
+            DarkMode();
+        }
+
+        // Method to allow user select color from ColorDialog and invert color for text over background color
+        private void customizeColorMode()
         {
             // Create instance of ColorDialog to let the user choose a color.
             ColorDialog colorDlg = new ColorDialog();
@@ -273,22 +327,15 @@ namespace AstroClient
                 foreach (var groupBox in Controls.OfType<GroupBox>())
                 {
                     groupBox.ForeColor = Color.FromArgb(r, g, b);
+                    groupBox.BackColor = colorDlg.Color;
+                }
+
+                if (listView != null)
+                {
+                    listView.BackColor = colorDlg.Color;
+                    listView.ForeColor = Color.FromArgb(r, g, b);
                 }
             }
-        }
-
-        // Event handler for the "Light Mode" menu item. 
-        // User selection for Light Colour Theme for the application.
-        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LightMode();
-        }
-
-        // Event handler for the "Dark Mode" menu item. 
-        // User selection for Dark Colour Theme for the application.
-        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DarkMode();
         }
 
         private void DarkMode()
@@ -373,15 +420,6 @@ namespace AstroClient
             }
         }
 
-        private void buttonLightMode_Click(object sender, EventArgs e)
-        {
-            LightMode();
-        }
-
-        private void buttonDarkMode_Click(object sender, EventArgs e)
-        {
-            DarkMode();
-        }
 
         // To manually change the colour setting of column header in ListView
         //private void listView_DrawColumnHeaderDark(object sender, DrawListViewColumnHeaderEventArgs e)
@@ -410,6 +448,6 @@ namespace AstroClient
         //}
         #endregion
 
-
+        
     }
 }
