@@ -88,8 +88,9 @@ namespace AstroClient
             {
                 double input1 = double.Parse(textBoxObservedWavelength.Text);
                 double input2 = double.Parse(textBoxRestWavelength.Text);
-                string output = (input2 == 0) ? "Error: Zero Division" : Formula(input1, input2).ToString("0.##E+00") + " m/s";
-                return output;
+                string result = (input2 == 0) ? ErrorZeroDivision(Thread.CurrentThread.CurrentUICulture.Name) : 
+                    Formula(input1, input2).ToString("0.##") + " pc";
+                return result;
             }
             catch (Exception ex)
             {
@@ -97,6 +98,7 @@ namespace AstroClient
                 return "Error!";
             }
         }
+
 
         // Calculate Star Distance based on user input.
         private string calculateStarDistance(TextBox textBoxParallaxAngle, Func<double, double> Formula)
@@ -107,13 +109,31 @@ namespace AstroClient
             try
             {
                 double input = double.Parse(textBoxParallaxAngle.Text);
-                string result = (input == 0) ? "Error! Zero Division" : Formula(input).ToString("0.##") + " pc";
+                string result = (input == 0) ? ErrorZeroDivision(Thread.CurrentThread.CurrentUICulture.Name) : 
+                    Formula(input).ToString("0.##") + " pc";
                 return result;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error!" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return "Error!";
+            }
+        }
+
+        // Method to translate Zero Division Error to selected language
+        private string ErrorZeroDivision(string input)
+        {
+            if (input == "de-DE")
+            {
+                return "Fehler! Nullteilung";
+            }
+            else if (input == "fr-FR")
+            {
+                return "Erreur! Division zéro";
+            }
+            else
+            {
+                return "Error: Zero Division";
             }
         }
 
@@ -127,7 +147,8 @@ namespace AstroClient
             try
             {
                 double input = double.Parse(textBoxCelcius.Text);
-                string result = (input < -273) ? "Error! Input < -273" : Formula(input).ToString("0.##") + " °K";
+                string result = (input < -273) ? ErrorCelcius(Thread.CurrentThread.CurrentUICulture.Name) : 
+                    Formula(input).ToString("0.##") + " °K";
                 return result;
             }
             catch (Exception ex)
@@ -136,7 +157,24 @@ namespace AstroClient
                 return "Error!";
             }
         }
-        
+
+        // Method to translate Celcius Error to selected language
+        private string ErrorCelcius(string input)
+        {
+            if (input == "de-DE")
+            {
+                return "Fehler! Eingabe < -273";
+            }
+            else if (input == "fr-FR")
+            {
+                return "Erreur ! Entrée < -273";
+            }
+            else
+            {
+                return "Error: Zero Division";
+            }
+        }
+
         // Calculate Event Horizon based on user input.
         private string calculateEventHorizon(TextBox textBoxMassOfStar, TextBox textBoxMassExponent, Func<double, double> Formula)
         {
@@ -147,7 +185,7 @@ namespace AstroClient
             try
             {
                 double input1 = double.Parse(textBoxMassOfStar.Text);
-                int input2 = int.Parse(textBoxMassExponent.Text);
+                int input2 = (textBoxMassExponent.Text == "") ? 0 : int.Parse(textBoxMassExponent.Text);
                 double massOfStar = input1 * Math.Pow(10, input2);
                 double output = Formula(massOfStar);
                 return output.ToString("0.##E+00") + " m";
