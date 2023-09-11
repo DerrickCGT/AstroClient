@@ -278,17 +278,19 @@ namespace AstroClient
             DarkMode();
         }
 
-        // Event Handler for the customize color button
+        // Event Handler for the Customize color button
         private void buttonCustomizeMode_Click(object sender, EventArgs e)
         {
             customizeColorMode();
         }
 
+        // Event Handler for the LightMode color button
         private void buttonLightMode_Click(object sender, EventArgs e)
         {
             LightMode();
         }
 
+        // Event Handler for the DarkMode color button
         private void buttonDarkMode_Click(object sender, EventArgs e)
         {
             DarkMode();
@@ -330,6 +332,7 @@ namespace AstroClient
                     groupBox.BackColor = colorDlg.Color;
                 }
 
+                // Update listView text and back colors
                 if (listView != null)
                 {
                     listView.BackColor = colorDlg.Color;
@@ -338,6 +341,7 @@ namespace AstroClient
             }
         }
 
+        // Method to change UI color to Dark Mode
         private void DarkMode()
         {
             BackColor = Color.Black;
@@ -376,6 +380,7 @@ namespace AstroClient
             }
         }
 
+        // Method to change UI color to Light Mode
         private void LightMode()
         {
             // Background color
@@ -447,7 +452,6 @@ namespace AstroClient
         //    e.Graphics.DrawString(e.Header.Text, e.Font, Brushes.Black, newBounds);
         //}
         #endregion
-
-        
+                
     }
 }
